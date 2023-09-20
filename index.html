@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Controle de Vendas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Controle de Vendas</h1>
+    <label for="produto">Selecione o produto:</label>
+    <select id="produto">
+        <option value="1">Notebook</option>
+        <option value="2">Celular</option>
+        <option value="3">Relógio</option>
+        <option value="4">Tablet</option>
+        <option value="5">Computador</option>
+        <option value="6">Televisão</option>
+
+    </select><br><br>
+
+    <label for="precoUnitario">Digite o preço unitário do produto:</label>
+    <input type="number" id="precoUnitario"><br><br>
+
+    <label for="quantidade">Digite a quantidade vendida:</label>
+    <input type="number" id="quantidade"><br><br>
+
+    <button onclick="calcularVenda()">Calcular</button><br><br>
+
+    <p>Total da venda: <span id="resultadoTotal"></span></p>
+    <p>Total de desconto: <span id="desconto"></span></p>
+    <p>Imposto sobre as vendas: <span id="resultadoImposto"></span></p>
+    <p id="mensagem"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
